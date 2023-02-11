@@ -1,0 +1,130 @@
+.disease-square {
+  width: 5.5vmax;
+  height: 5.5vmax;
+  background-color: white;
+  border: 1px solid none;
+  /* Shadow */
+  filter: drop-shadow(.5vmax .5vmax .5vmax rgba(0, 0, 0, 0.25));
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  /* Left text */
+  text-align: left;
+  border-radius: .5vmax;
+}
+
+.disease-organ {
+  font-size: .9vmax;
+  position: absolute;
+  line-height: .9;
+  left: 3%;
+  top: 10%;
+  bottom: 10%;
+  font-weight: 600;
+}
+
+.disease-cell-type {
+  font-size: .6vmax;
+  position: absolute;
+  left: 3%;
+  top: 40%;
+  line-height: 1;
+}
+
+.disease-name {
+  font-size: .6vmax;
+  position: absolute;
+  left: 3%;
+  right: 10%;
+  top: 70%;
+  bottom: 5%;
+  line-height: 1;
+  color: #92302e;
+  font-weight: 600;
+  word-break: break-word;
+  hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+.periodic-table {
+  display: grid;
+  row-gap: 1vmin;
+  column-gap: 1vmin;
+}
+
+.periodic-table-container {
+  filter: drop-shadow(.5vmax .5vmax .5vmax rgba(0, 0, 0, 0.25));
+  border-radius: 1vmin;
+  margin-top: 7vh;
+  width: 45vmax;  
+  padding: 1.25%;
+  background: #FCFCFC;
+  overflow-x:scroll;
+}
+
+.disease-class-container {
+  position: relative;
+  display: grid;
+  margin-top: none;
+  grid-template-rows: 4vh 4vh;
+  column-gap: auto;
+  height: fit-content;
+}
+
+.disease-class-color {
+  width: 1vmax;
+  height: 1vmax;
+  border: .2vmin solid black;
+  vertical-align: middle;
+}
+
+.disease-class-text {
+  position: relative;
+  margin-left: 2vmax;
+  top: -1vmax;
+  font-size: 1vmax;
+  width: 1vmax;
+  height: 1vmax;
+  word-break: break-word;
+  hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+.disease-class-rectangle {
+  width: 14vw;
+  height: 2vh;
+  font-size: 1vh;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  /* Left text */
+  text-align: left;
+}
+
+.selected-disease > * {
+  position: absolute;
+  transform: translate(50%, 50%);
+  order: 0;
+  align-self: auto;
+}
+
+.navbar-brand > img {
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  top: -2vh;
+  left: 2vh;
+}
+
+.navbar-brand > span {
+  position: absolute;
+  top: 1vh;
+  left: 13vh;
+  font-size: 3vh;
+}
+
+.navbar {
+  height: 8vh;
+}
