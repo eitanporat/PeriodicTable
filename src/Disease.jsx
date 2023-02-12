@@ -8,7 +8,7 @@ function Disease({organ, cellType, diseaseName, row, column, diseaseClass, isAct
         gridRowEnd: row,
         gridColumnStart: column,
         gridColumn: column,
-        borderRadius: scale == 1 ? "1vmax": "2vmax",
+        borderRadius: scale == 1 ? "0.8vmax": "1.2vmax",
         width: scale == 1 ? "10vmin" : "15vmin",
         height: scale == 1 ? "10vmin" : "15vmin",
         backgroundColor: isActive ? diseaseColors[diseaseClass] : 'white',
