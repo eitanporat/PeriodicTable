@@ -12,31 +12,28 @@
 }
 
 .disease-organ {
-  font-size: 1.2vmin;
   display: block;
   position: relative;
   line-height: .9;
   width: 90%;
-  left: 5%;
+  left: 4%;
   top: 10%;
   bottom: 10%;
   font-weight: 600;
 }
 
 .disease-cell-type {
-  font-size: 1vmin;
   display: block;
   position: relative;
-  left: 5%;
+  left: 4%;
   top: 20%;
   line-height: 1;
 }
 
 .disease-name {
-  font-size: 1vmin;
   position: relative;
   display: block;
-  left: 5%;
+  left: 4%;
   width: 95%;
   top: 25%;
   bottom: 5%;
@@ -60,7 +57,7 @@
 .periodic-table-container {
   box-shadow: 0px 0px 0px 1px black;
   border-radius: 1vmin;
-  margin-top: 20%;
+  margin-top: 10%;
   padding: 1.25%;
   background: #FCFCFC;
 }
@@ -105,7 +102,9 @@
 
 .selected-disease > * {
   position: relative;
-  transform: translate(50%, 50%);
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
   order: 0;
   align-self: auto;
 }

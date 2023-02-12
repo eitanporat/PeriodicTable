@@ -15,13 +15,13 @@ function Disease({organ, cellType, diseaseName, row, column, diseaseClass, isAct
         boxShadow: isSelected ? "0px 0px 0px 2px blue":"0px 0px 0px 1px black",
     }}>
             <div className="disease-organ" style={{
-                fontSize: scale == 1 ? "1.4vmin" : "2.1vmin"
+                fontSize: scale == 1 ? "1.3vmin" : "2.1vmin"
             }}>{organ}</div>
             <div className="disease-cell-type" style={{
                 fontSize: scale == 1 ? "1.2vmin" : "1.8vmin"
             }}>{cellType}</div>
             <div className="disease-name" style={{
-                fontSize: scale == 1 ? "1.2vmin" : "1.8vmin"
+                fontSize: scale == 1 ? "1vmin" : "1.8vmin"
             }}>{diseaseName}</div>
         </div>
     
