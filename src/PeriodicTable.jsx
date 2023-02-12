@@ -87,16 +87,24 @@ function PeriodicTable() {
     // Flexbox container
     <Container fluid>
         <Row>
-        <Col>
+        <Col xs={3}>
         <div className="selected-disease">
             {diseaseComponents[selectedIndex]}
         </div>
         </Col>
-        <Col xs={8}>
-        <div className="periodic-table-container">
-            <div className="disease-class-container">{diseaseClassComponents}</div>
-            <div className="periodic-table">{diseaseComponents}</div>
-        </div>
+        <Col xs={6}>
+        <Container className="periodic-table-container">
+            <Row>
+            <Col>
+                <div className="disease-class-container">{diseaseClassComponents}</div>
+            </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <div className="periodic-table">{diseaseComponents}</div>
+                </Col>
+            </Row>
+        </Container>
         </Col>
         </Row>
 

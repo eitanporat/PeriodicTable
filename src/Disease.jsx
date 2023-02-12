@@ -2,8 +2,6 @@ import React from 'react'
 import {diseaseColors} from './constants'
 
 function Disease({organ, cellType, diseaseName, row, column, diseaseClass, isActive, mouseClicked, isSelected}) {
-    console.log(isSelected);
-
     return <div className="disease-square" onClick={mouseClicked}
     style={{
         gridRowStart: row,

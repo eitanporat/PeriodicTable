@@ -1,6 +1,6 @@
 .disease-square {
-  width: 5.5vmax;
-  height: 5.5vmax;
+  width: 6vmax;
+  height: 6vmax;
   background-color: white;
   border: 1px solid none;
   /* Shadow */
@@ -57,14 +57,12 @@
   filter: drop-shadow(.5vmax .5vmax .5vmax rgba(0, 0, 0, 0.25));
   border-radius: 1vmin;
   margin-top: 7vh;
-  width: 45vmax;  
   padding: 1.25%;
   background: #FCFCFC;
   overflow-x:scroll;
 }
 
 .disease-class-container {
-  position: relative;
   display: grid;
   margin-top: none;
   grid-template-rows: 4vh 4vh;
