@@ -43,6 +43,7 @@ function PeriodicTable() {
           isActive={diseaseState[index].isActive}
           isSelected={diseaseState[index].isSelected}
           mouseClicked={mouseClicked}
+          scale={1}
         />
       );
     }
@@ -83,13 +84,27 @@ function PeriodicTable() {
     }
   );
 
+  const {diseaseName, organ, cellType, diseaseClass, row, column} = diseases[selectedIndex];
+
   return (
     // Flexbox container
     <Container fluid>
         <Row>
         <Col xs={3}>
-        <div className="selected-disease">
-            {diseaseComponents[selectedIndex]}
+          <div className="selected-disease">
+            <Disease
+            key={diseaseName}
+            organ={organ}
+            cellType={cellType}
+            diseaseName={diseaseName}
+            row={row}
+            column={column}
+            diseaseClass={diseaseClass}
+            isActive={true}
+            isSelected={false}
+            scale={2}
+            />
+        
         </div>
         </Col>
         <Col sm="auto">
