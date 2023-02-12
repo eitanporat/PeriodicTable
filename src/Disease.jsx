@@ -9,8 +9,7 @@ function Disease({organ, cellType, diseaseName, row, column, diseaseClass, isAct
         gridColumnStart: column,
         gridColumn: column,
         backgroundColor: isActive ? diseaseColors[diseaseClass] : 'white',
-        outline: isSelected ? 'blue solid .5vmin' : 'none',
-        outlineRadius: '1vmin'
+        boxShadow: isSelected ? "0px 0px 0px 2px blue":"0px 0px 0px 1px black",
     }}>
             <div className="disease-organ">{organ}</div>
             <div className="disease-cell-type">{cellType}</div>
