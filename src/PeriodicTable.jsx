@@ -92,7 +92,7 @@ function PeriodicTable() {
             {diseaseComponents[selectedIndex]}
         </div>
         </Col>
-        <Col xs={6}>
+        <Col sm="auto">
         <Container className="periodic-table-container">
             <Row>
             <Col>
